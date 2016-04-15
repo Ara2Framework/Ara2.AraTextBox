@@ -31,11 +31,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ara2, Version=1.2.5946.20635, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ara2.1.2.5946.20635\lib\net40\Ara2.dll</HintPath>
+      <HintPath>..\packages\Ara2.1.2.5946.20635\lib\net40\Ara2.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,21 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AraComponentsServer\Components\AraTextBox.cs" />
-    <Compile Include="AraComponentsServer\Components\AraTextDatePicker.cs" />
+    <Compile Include="Ara2ComponentsServer\Components\AraTextBox.cs" />
+    <Compile Include="Ara2ComponentsServer\Components\AraTextDatePicker.cs" />
+    <Compile Include="Ara2ComponentsServer\Components\KeyBoard\FrmAraTextBoxKeyBoard\FrmAraTextBoxKeyBoard.AraDesign.cs" />
+    <Compile Include="Ara2ComponentsServer\Components\KeyBoard\FrmAraTextBoxKeyBoard\FrmAraTextBoxKeyBoard.cs" />
+    <Compile Include="Ara2ComponentsServer\Components\KeyBoard\FrmAraTextBoxKeyBoard\KeyBoardKey.cs" />
+    <Compile Include="Ara2ComponentsServer\Components\KeyBoard\FrmAraTextBoxKeyBoard\KeyBoardModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ara2\AraTextBox\CREDITS.md" />
-    <None Include="Ara2\AraTextBox\LICENSE.md" />
+    <None Include="Ara2ComponentsServer\Components\KeyBoard\FrmAraTextBoxKeyBoard\FrmAraTextBoxKeyBoard.AraDesign.json" />
+    <None Include="Ara2\Components\AraTextBox\CREDITS.md" />
+    <None Include="Ara2\Components\AraTextBox\LICENSE.md" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ara2\AraTextBox\AraTextBox.js" />
+    <Content Include="Ara2\Components\AraTextBox\AraTextBox.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Ara2\AraTextBox\files\" />
-    <Folder Include="AraComponentsServer\Components\KeyBoard\" />
+    <Folder Include="Ara2\Components\AraTextBox\files\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
