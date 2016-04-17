@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Ara2.AraTextBox</id>
+        <version>$version$</version>
+        <title>Ara2.AraTextBox</title>
+        <authors>rafaelleonel</authors>
+        <owners>rafaelleonel</owners>
+        <licenseUrl>http://www.araframework.com.br/license</licenseUrl>
+        <projectUrl>http://www.araframework.com.br</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>Componente do AraFramework</description>
+        <copyright>Copyright ©  2016</copyright>
+        <language>pt-BR</language>
+        <dependencies>
+            <dependency id="Ara2" version="1.2.6" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\Ara2\Components\AraTextBox\AraTextBox.js" target="content\Ara2\Components\AraTextBox\AraTextBox.js" />
+        <file src="..\Ara2\Components\AraTextBox\CREDITS.md" target="content\Ara2\Components\AraTextBox\CREDITS.md" />
+        <file src="..\Ara2\Components\AraTextBox\LICENSE.md" target="content\Ara2\Components\AraTextBox\LICENSE.md" />
+        <file src="..\bin\Release\Ara2.AraTextBox.dll" target="lib\net40\Ara2.AraTextBox.dll" />
+    </files>
+</package>
