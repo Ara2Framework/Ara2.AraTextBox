@@ -661,11 +661,7 @@ Ara.AraClass.Add('AraTextBox', function (vAppId, vId, ConteinerFather) {
     }
 
     this.SetType = function (vType) {
-        if ($.browser.msie && (parseInt($.browser.version, 10) === 6 || parseInt($.browser.version, 10) === 7 || parseInt($.browser.version, 10) === 8)) {
-            this.Obj = this.changeType(this.Obj, vType);
-        } else {
-            this.Obj.type = vType;
-        }
+        this.Obj = this.changeType(this.Obj, vType);
     }
 
     this.changeType = function (x, type) {
