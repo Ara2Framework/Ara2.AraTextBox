@@ -213,20 +213,20 @@ namespace Ara2.Components
     
         public delegate void Key_delegate(AraTextBox Object, int vKey);
         [AraDevEvent]
-        public AraComponentEvent<EventHandler> Click;
+        public AraComponentEvent<EventHandler> Click { get; set; }
         [AraDevEvent]
-        public AraComponentEvent<EventHandler> Focus;
+        public AraComponentEvent<EventHandler> Focus { get; set; }
         [AraDevEvent]
-        public AraComponentEvent<EventHandler> LostFocus;
+        public AraComponentEvent<EventHandler> LostFocus { get; set; }
         [AraDevEvent]
-        public AraComponentEvent<EventHandler> Change;
+        public AraComponentEvent<EventHandler> Change { get; set; }
         [AraDevEvent]
-        public AraComponentEventKey<Key_delegate> KeyDown;
+        public AraComponentEventKey<Key_delegate> KeyDown { get; set; }
         [AraDevEvent]
-        public AraComponentEventKey<Key_delegate> KeyUp;
+        public AraComponentEventKey<Key_delegate> KeyUp { get; set; }
         [AraDevEvent]
-        public AraComponentEventKey<Key_delegate> KeyPress;
-       
+        public AraComponentEventKey<Key_delegate> KeyPress { get; set; }
+
         #endregion
 
         [AraDevProperty("")]
@@ -634,7 +634,7 @@ namespace Ara2.Components
 
         public delegate AraTextBoxAutoCompleteResu AutoCompleteSearch_delegate(AraTextBox Object, string vSearch);
         [AraDevEvent]
-        public AraComponentEvent<AutoCompleteSearch_delegate> AutoCompleteSearch;
+        public AraComponentEvent<AutoCompleteSearch_delegate> AutoCompleteSearch { get; set; }
 
 
         private bool _AutoCompleteSearch_Validate = false;
